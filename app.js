@@ -84,7 +84,7 @@ app.post('/api/books', (req, res) => {
 		}
 		res.json(book);
 	});
-});
+}); 
 
 app.put('/api/books/:_id', (req, res) => {
 	var id = req.params._id;
