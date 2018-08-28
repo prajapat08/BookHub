@@ -81,7 +81,7 @@ app.post('/api/books', (req, res) => {
 	Book.addBook(book, (err, book) => {
 		if(err){
 			throw err;
-		}
+		} 
 		res.json(book);
 	});
 }); 
