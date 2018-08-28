@@ -25,7 +25,7 @@ app.get('/api/genres', (req, res) => {
 		}
 		res.json(genres);
 	});
-});
+}); 
 
 app.post('/api/genres', (req, res) => {
 	var genre = req.body;
