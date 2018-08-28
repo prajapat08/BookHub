@@ -80,7 +80,7 @@ app.post('/api/books', (req, res) => {
 	var book = req.body;
 	Book.addBook(book, (err, book) => {
 		if(err){
-			throw err;
+			 throw err;
 		} 
 		res.json(book);
 	});
