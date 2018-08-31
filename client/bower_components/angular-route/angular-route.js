@@ -1,44 +1,13 @@
-/**
- * @license AngularJS v1.4.7
- * (c) 2010-2015 Google, Inc. http://angularjs.org
- * License: MIT
- */
+ 
 (function(window, angular, undefined) {'use strict';
 
-/**
- * @ngdoc module
- * @name ngRoute
- * @description
- *
- * # ngRoute
- *
- * The `ngRoute` module provides routing and deeplinking services and directives for angular apps.
- *
- * ## Example
- * See {@link ngRoute.$route#example $route} for an example of configuring and using `ngRoute`.
- *
- *
- * <div doc-module-components="ngRoute"></div>
- */
- /* global -ngRouteModule */
+
+
 var ngRouteModule = angular.module('ngRoute', ['ng']).
                         provider('$route', $RouteProvider),
     $routeMinErr = angular.$$minErr('ngRoute');
 
-/**
- * @ngdoc provider
- * @name $routeProvider
- *
- * @description
- *
- * Used for configuring routes.
- *
- * ## Example
- * See {@link ngRoute.$route#example $route} for an example of configuring and using `ngRoute`.
- *
- * ## Dependencies
- * Requires the {@link ngRoute `ngRoute`} module to be installed.
- */
+ 
 function $RouteProvider() {
   function inherit(parent, extra) {
     return angular.extend(Object.create(parent), extra);
