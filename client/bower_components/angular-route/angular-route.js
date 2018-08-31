@@ -529,8 +529,7 @@ function ngViewFactory($route, $anchorScroll, $animate) {
             // Note: This will also link all children of ng-view that were contained in the original
             // html. If that content contains controllers, ... they could pollute/change the scope.
             // However, using ng-view on an element with additional content does not make sense...
-            // Note: We can't remove them in the cloneAttchFn of $transclude as that
-            // function is called before linking the content, which would apply child
+             
             // directives to non existing elements.
             var clone = $transclude(newScope, function(clone) {
               $animate.enter(clone, null, currentElement || $element).then(function onNgViewEnter() {
@@ -557,8 +556,7 @@ function ngViewFactory($route, $anchorScroll, $animate) {
 // This directive is called during the $transclude call of the first `ngView` directive.
 // It will replace and compile the content of the element with the loaded template.
 // We need this directive so that the element content is already filled when
-// the link function of another directive on the same element as ngView
-// is called.
+ 
 ngViewFillContentFactory.$inject = ['$compile', '$controller', '$route'];
 function ngViewFillContentFactory($compile, $controller, $route) {
   return {
