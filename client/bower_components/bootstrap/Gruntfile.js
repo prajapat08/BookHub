@@ -1,9 +1,4 @@
-/*!
- * Bootstrap's Gruntfile
- * http://getbootstrap.com
- * 
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+ 
 
 module.exports = function (grunt) {
   'use strict';
