@@ -12,7 +12,7 @@ Book =require('./models/book');
 // Connect to Mongoose
 mongoose.connect('mongodb://localhost/bookstore');
 var db = mongoose.connection;
-
+// get Home page
 app.get('/', (req, res) => {
 	res.send('Please use /api/books or /api/genres');
 });
@@ -25,7 +25,7 @@ app.get('/api/genres', (req, res) => {
 		res.json(genres);
 	});
 }); 
-
+// to get genres
 app.post('/api/genres', (req, res) => {
 	var genre = req.body;
 	Genre.addGenre(genre, (err, genre) => {
@@ -35,7 +35,7 @@ app.post('/api/genres', (req, res) => {
 		res.json(genre);
 	});
 });
-
+// to get genres id
 app.put('/api/genres/:_id', (req, res) => {
 	var id = req.params._id;
 	var genre = req.body;
