@@ -52,7 +52,7 @@ app.delete('/api/genres/:_id', (req, res) => {
 	Genre.removeGenre(id, (err, genre) => {
 		if(err){
 			throw err;
-		}
+		} 
 		res.json(genre);
 	});
 });
