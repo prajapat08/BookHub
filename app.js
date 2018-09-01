@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-  
+   
 app.use(express.static(__dirname+'/client'));
 app.use(bodyParser.json()); 
  
