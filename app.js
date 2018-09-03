@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 Genre =require('./models/genre');
 Book =require('./models/book');
 
-// Connect to Mongoose
+// Connect  to  Mongoose
 mongoose.connect('mongodb://localhost/bookstore');
 var db = mongoose.connection;
 // get Home page
