@@ -35,7 +35,7 @@ app.post('/api/genres', (req, res) => {
 		res.json(genre);
 	});
 });
-// to get genres id
+// to  get  genres  id
 app.put('/api/genres/:_id', (req, res) => {
 	var id = req.params._id;
 	var genre = req.body;
