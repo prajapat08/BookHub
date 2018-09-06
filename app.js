@@ -46,6 +46,7 @@ app.put('/api/genres/:_id', (req, res) => {
 		res.json(genre);
 	});
 });
+ // genres id
 
 app.delete('/api/genres/:_id', (req, res) => {
 	var id = req.params._id;
