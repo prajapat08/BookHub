@@ -11,7 +11,7 @@ const genreSchema = mongoose.Schema({
 		default: Date.now
 	}
 });
-
+ 
 const Genre = module.exports = mongoose.model('Genre', genreSchema);
 
 // Get Genres
