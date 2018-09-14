@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-
 // Book Schema 
 const bookSchema = mongoose.Schema({
 	title:{
